@@ -1,0 +1,192 @@
+/* ------------------------------------------------------------------------------------------
+BASE
+------------------------------------------------------------------------------------------ */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font: 1.8rem "Roboto", sans-serif;
+
+    color: #000;
+    background-color: #E6EDF1;
+
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+/* ------------------------------------------------------------------------------------------
+COMPONENTS
+------------------------------------------------------------------------------------------ */
+
+/* ----- Entête ----- */
+
+header{
+    background-color: #379AE3;
+}
+
+header .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p{
+    font: 2.4rem "Merriweather", serif;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    color: #000;
+}
+
+nav a:hover{
+    color: #E6EDF1;
+}
+
+header .bouton{
+    padding: 5px 20px 5px 20px;
+    background-color: #E67522;
+    border: solid 2px #000;
+    border-radius: 5px;
+}
+
+header .bouton:hover{
+    background-color: #fff;
+}
+
+/* ----- Section Héro ----- */
+
+.héro{
+    background: no-repeat url(../images/hero.jpg);
+    height: 650px;
+    background-size: cover;
+}
+
+.héro .wrapper{
+    background-color: rgba(0, 0, 0, 70%);
+    height: 450px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font: 6.4rem "Merriweather", serif;
+    color: #E67522;
+}
+
+.héro p{
+    font: 2rem "Roboto", serif;
+    color: #fff;
+}
+
+.héro .bouton{
+    color: #fff;
+    padding: 5px 40px 5px 40px;
+    background-color: #E67522;
+    border-radius: 5px;
+}
+
+/* ----- Section Contenu ----- */
+
+.conteneur{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+article{
+    background-color: #fff;
+    max-width: 370px;
+}
+
+h2{
+    font: bold 6.4rem "Merriweather", serif;
+    text-align: center;
+
+    margin: 0;
+    padding-top: 100px;
+}
+
+h3{
+    font: bold 3.6rem "Merriweather", serif;
+    text-align: center;
+}
+
+.contenu .bouton{
+    background-color: #E67522;
+    border: solid 2px #000;
+    border-radius: 5px;
+    padding: 12px 20px 12px 20px;
+}
+
+.contenu p{
+    text-align: center;
+}
+
+/* ----- Footer ----- */
+
+footer{
+    background-color: #CCDAE3;
+}
+
+footer span{
+    background: #E67522;
+    border-radius: 100%;
+    border: solid 2px #fff;
+    color: #fff;
+
+    width: 90px;
+    height: 90px;
+
+    
+}
+
+.boîtier{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.material-symbols-outlined{
+    font-size: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.4rem;
+
+    padding: 50px 0 60px;
+    margin: 0;
+}
