@@ -85,25 +85,41 @@ header .bouton:hover{
 }
 
 .héro .wrapper{
+   display: flex;
+   justify-content: right;
+   height: 650px;
+   align-items: center;
+}
+
+.héro .texte{
     background-color: rgba(0, 0, 0, 70%);
     height: 450px;
 
     border-radius: 20px;
 
+    width: 550px;
+    height: 440px;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 h1{
     font: 6.4rem "Merriweather", serif;
     color: #E67522;
+    max-width: 470px;
+    margin: 0;
+    text-align: center;
 }
 
 .héro p{
     font: 2rem "Roboto", serif;
     color: #fff;
+    max-width: 470px;
+    margin: 0;
+    text-align: center;
 }
 
 .héro .bouton{
@@ -122,8 +138,11 @@ h1{
 }
 
 article{
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     max-width: 370px;
+    margin-bottom: 100px;
 }
 
 h2{
@@ -144,10 +163,17 @@ h3{
     border: solid 2px #000;
     border-radius: 5px;
     padding: 12px 20px 12px 20px;
+
+    align-self: center;
+    margin-top: auto;
 }
 
 .contenu p{
     text-align: center;
+}
+
+.contenu span{
+    max-width: 800px;
 }
 
 /* ----- Footer ----- */
@@ -164,8 +190,6 @@ footer span{
 
     width: 90px;
     height: 90px;
-
-    
 }
 
 .boîtier{
@@ -189,4 +213,25 @@ footer p{
 
     padding: 50px 0 60px;
     margin: 0;
+}
+
+/* ----- Modale ----- */
+
+.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+
+    background-color: rgba(0, 0, 0, 70%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.visible{
+    display: flex;
 }
