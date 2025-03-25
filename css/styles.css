@@ -72,6 +72,7 @@ header .bouton{
     border-radius: 5px;
 }
 
+
 header .bouton:hover{
     background-color: #fff;
 }
@@ -129,6 +130,10 @@ h1{
     border-radius: 5px;
 }
 
+.héro .bouton:hover{
+    background-color: #fff;
+    color: #000;
+}
 /* ----- Section Contenu ----- */
 
 .conteneur{
@@ -142,7 +147,17 @@ article{
     flex-direction: column;
     background-color: #fff;
     max-width: 370px;
-    margin-bottom: 100px;
+    padding-bottom: 30px;
+    margin: 0 30px 100px 30px;
+    position: relative;
+}
+
+.premier{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
 }
 
 h2{
@@ -158,6 +173,13 @@ h3{
     text-align: center;
 }
 
+.centre{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 70px;
+}
+
 .contenu .bouton{
     background-color: #E67522;
     border: solid 2px #000;
@@ -166,6 +188,11 @@ h3{
 
     align-self: center;
     margin-top: auto;
+}
+
+.contenu .bouton:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 .contenu p{
@@ -190,6 +217,12 @@ footer span{
 
     width: 90px;
     height: 90px;
+}
+
+footer span:hover{
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
 }
 
 .boîtier{
@@ -230,6 +263,16 @@ footer p{
     display: none;
     justify-content: center;
     align-items: center;
+
+    padding: 500px;
+}
+
+.modale p{
+    padding: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    font: bold 5rem "Roboto", sans-serif;
 }
 
 .visible{
